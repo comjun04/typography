@@ -1,0 +1,21 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Typography</title>
+  <link rel="stylesheet" href="/dist/css/style.css">
+  <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+  <script src="/dist/js/pixi.min.js"></script>
+  <script src="/dist/bundle.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+    let type = "WebGL"
+    if(!PIXI.utils.isWebGLSupported()){
+      type = "canvas"
+    }
+
+    PIXI.utils.sayHello(type)
+  </script>
+  <noscript>Please enable Javascript on your browser to see this content.</noscript>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "typography",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "devbuild": "webpack",
+    "build": "webpack --config webpack.config.prod.js",
+    "svr": "serve -n",
+    "dev": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.8.7",
+    "webpack": "^4.42.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
