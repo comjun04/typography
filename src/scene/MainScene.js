@@ -45,6 +45,9 @@ class MainScene extends Scene {
   }
 
   async show() {
+    this.width = display.width
+    this.height = display.height
+    this.position.set(0)
     this.visible = true
     await Tween.async(this, {alpha: 1}, 1000)
   }
@@ -71,6 +74,7 @@ class MainScene extends Scene {
         let listScene = SceneManager.get('ListScene')
         await listScene.load()
         await listScene.show()
+        await listScene.run()
       }
     }
     startBtn.on('click', startBtnClick)
